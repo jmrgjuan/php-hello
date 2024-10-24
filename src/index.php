@@ -9,7 +9,7 @@ use Appwrite\Services\Users;
 return function ($context) {
     // You can use the Appwrite SDK to interact with other services
     // For this example, we're using the Users service
-    $client = new Client();
+    /*$client = new Client();
     $client
         ->setEndpoint('https://cloud.appwrite.io/v1')
         ->setProject(getenv('APPWRITE_FUNCTION_PROJECT_ID'))
@@ -30,7 +30,7 @@ return function ($context) {
         // Use res object to respond with text(), json(), or binary()
         // Don't forget to return a response!
         return $context->res->text('Pong');
-    }
+    }*/
 
     return $context->res->json([
         'motto' => 'Build like a team of hundreds_',
